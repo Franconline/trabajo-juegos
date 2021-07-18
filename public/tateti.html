@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tateti</title>
+  <link rel="stylesheet" href="./css/tateti.css">
+</head>
+
+<body class="body">
+  
+  <div id="form" class="form">
+    <button onclick="comenzarJuego()" class="boton botonEmpezar"> Empezar Nuevo Juego </button>
+    <input autocomplete="off" type="text" id="input-id" placeholder="Ingresa codigo de sala existente"> <!--  con autocomplete off, no te recomienda codigos de partidas jugadas anteriormente-->
+    <button type="submit" onclick="ingresarSalaExistente()" class="boton"> Ingresar </button>
+  </div>
+
+  <div id="container" class="container">
+    
+    <button id="0-0"></button>                               
+    <button id="0-1"></button>
+    <button id="0-2"></button>
+    <button id="1-0"></button>
+    <button id="1-1"></button>
+    <button id="1-2"></button>
+    <button id="2-0"></button>
+    <button id="2-1"></button>
+    <button id="2-2"></button>
+
+  </div>
+  
+  <script src="./js/tateti.js"></script>
+</body>
+
+</html>

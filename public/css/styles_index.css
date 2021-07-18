@@ -1,0 +1,39 @@
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.acceso {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition-duration: 0.7s;
+    padding: 15rem;
+}
+
+.accesoAhorcado {
+    border: 2px solid #4CAF50;
+}
+
+.accesoAhorcado:hover {
+    background-color: #4CAF50;
+}
+
+.accesoTateti {
+    border: 2px solid #008CBA;
+}
+
+.accesoTateti:hover {
+    background-color: #008CBA;
+}
+
+.accesoAhorcado:hover, .accesoTateti:hover {
+    cursor: pointer;
+    color: white;
+}

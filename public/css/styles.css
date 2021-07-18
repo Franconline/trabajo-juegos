@@ -1,0 +1,81 @@
+.header {
+    padding: 5rem 0;
+}
+.container, .letras{
+    display: grid;
+}
+.container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.boton, .li {
+    margin: 0 auto;
+}
+
+.letras {
+    justify-content: space-between;
+    margin-top: 10px;
+    grid-column: 2 / 3;
+}
+
+.li {
+    list-style: none;
+}
+
+.boton {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition-duration: 0.7s;
+}
+
+.botonEmpezar {
+    width: 15%;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    border: 2px solid #4CAF50;
+}
+
+.botonEmpezar:hover {
+    background-color: #4CAF50;
+}
+
+.botonLetra {
+    border: 2px solid #008CBA;
+}
+
+.botonLetra:hover {
+    background-color: #008CBA;
+}
+
+.botonEmpezar:hover, .botonLetra:hover {
+    cursor: pointer;
+    color: white;
+    width: 100%
+}
+
+.letraInput {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+input::placeholder, .boton {
+    text-align: center;
+}
+
+.letrasIngresadas, .intentosRestantes {
+    font-size: 25px;
+}
+
+.canvas-paragraph{
+    text-align: center;
+}

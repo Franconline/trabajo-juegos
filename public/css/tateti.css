@@ -1,0 +1,36 @@
+button{
+    width: 200px; 
+    height:200px;
+    font-size: 24px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.botonTablero{
+    font-size: 32px;
+}
+.boton{
+    height: 80%;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width : 600px;
+    margin:auto;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+#input-id{
+    height: 23%;
+    
+}
+.p{
+    text-align: center ;
+    grid-column: 1 / 4;
+    font-size: 24px;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ahorcado</title>
+</head>
+
+<body class="body">
+    <header class="header">
+
+    </header>
+    <p class="canvas-paragraph">  <!-- meto el canvas adentro del p, para poder centrarlo-->
+        <canvas id="canvas-id" width="400" height="500"></canvas>
+    </p>
+    <div class="container">
+
+        <div class="letras" id="letras">
+
+        </div>
+
+        <input type="text" id="letra" class="letraInput" placeholder="Ingresa una letra" maxlength="1">
+        <button class="boton botonLetra" id="botonLetra" type="submit" onclick="preguntarPorLetra()"> Probar letra</button>
+
+    </div>
+    <div class="container">
+        <button onclick="empezarJuego()" class="boton botonEmpezar"> Empezar Juego </button>
+    </div>
+    <div>
+        <!-- Esto es para las letras ingresadas-->
+        <p class = "letrasIngresadas"> Letras ya ingresadas:  </p>
+        <p class = "intentosRestantes"> Intentos Restantes:  </p>
+    </div>
+    <script src="./js/ahorcado.js"></script>
+</body>
+
+</html>
